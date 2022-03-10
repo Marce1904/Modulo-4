@@ -4,15 +4,18 @@ import React from "react";
 const Header = (props) => {
     return (
 
-        <div class Marcelito>
+        <Header>
           
-            <img src= "C:\Users\Marcelo\OneDrive\DIPLOMATURA\Modulo 4\frontend\public\logo192.png" alt="TransportesX"/>
-            <h1>Marce Soluciones</h1>
-
-        </div>
-
+            <div class= "logo">
+                <div>
+                     <img src="images/logo192.png" alt= "Foto"/>
+                </div>
+                <div>
+                   <h1>Marce Soluciones</h1>
+                </div>
+            </div>
+        </Header>
         );
-
 }
 
 export default Header;

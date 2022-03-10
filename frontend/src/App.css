@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.completo{
+  background-color: rgb(198, 198, 198);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Cabecera{
+  color: rgb(56, 56, 56);
+  width: 100%;
+  margin-left: 3%;
+  background-color: rgb(78, 153, 206);
+  font-family: 'Open Sans', sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+  border: 0.5px solid black;
+  box-shadow: 0 0 5px black;  
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
+.animacion{
+  width: 30px;
+  height: 30px;
+  background-color: #8f99a4;
+  
+  animation-name: MiAnimacion;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  
+      }
+  
+  @keyframes MiAnimacion {
+      from {
+          font-size:0%;
+          margin-left:100%;
+      }
+      25% {
+          font-size:45%;
+          margin-left:50%;
+      }
+  
+      50% {
+          font-size:90%;
+          margin-left:50%;
+      }
+  
+      to {
+          font-size:90%;
+          margin-left:5%;
+          width:100%;
+      }
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  nav ul li {
+    width: 18%;
+    display: inline-block;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-radius: 0.25em;
+    margin-left: 5%;
+    box-shadow: 0 0 5px black;
+      
+    
+}
+nav ul li a{
+    background-color: rgb(44, 76, 99);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+    
 }
